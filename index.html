@@ -1,8 +1,59 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>I like men</p>
+<style>
+    .exp{visibility: hidden;}
+    .exp2{visibility: hidden;}
+    .exp3{visibility: hidden;}
+</style>
+</head>
+<h1 style="color:blue;">Scientifically Proven Facts</h1>
+<script>
+    function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+</script>
+
+<script>
+    function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+</script>
+
+<script>
+    function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+</script>
+
+<body>
+    <body style="background-color:rgba(000, 000, 000, 0);"></body>
+<button onclick="unhide()">Show Answer</button>
+<div class="exp">
+    <p>Yul likes big black men</p>
+</div>
+
+<button onclick="unhide2()">Show Answer</button>
+<div class="exp2">
+    <p>Yul likes little kids</p>
+</div>
+
+<button onclick="unhide3()">Show Answer</button>
+<div class="exp3">
+    <p>Yul likes gay men</p>
+</div>
+
 </body>
 </html>
