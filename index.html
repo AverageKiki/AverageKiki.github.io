@@ -6,6 +6,7 @@
     .exp2{visibility: hidden;}
     .exp3{visibility: hidden;}
     .exp4{visibility: hidden;}
+    .exp5{visibility: hidden;}
 </style>
 </head>
 <script>
@@ -102,6 +103,30 @@ console.log("Button 4 clicked");
 }
 </script>
 
+<script>
+    var hidden5 = false;
+    function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if (hidden5 == false)
+    {
+        if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+        }
+        hidden5 = true;
+    }
+    else
+    {
+        if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "hidden";
+        }
+        hidden5 = false;
+    }
+    
+console.log("Button 5 clicked");
+}
+</script>
+
 
 <center>
 <h1 style="color:blue;">Scientifically Proven Facts</h1>
@@ -130,13 +155,24 @@ console.log("Button 4 clicked");
         <p>Also kinda sus (sometimes)</p>
     </div>
 
+    <button onclick="unhide4()">Show/Hide Answer</button>
+    <div class="exp4">
+        <p>Ryden gey</p>
+        <p>Also kinda sus (sometimes)</p>
+    </div>
+
+    <button onclick="unhide5()">Show/Hide Answer</button>
+    <div class="exp5">
+        <p>uwu</p>
+    </div>
+
     <a href="virus.html">Click for virus</a>
-    <p style = "font-size:25%">‎</p>
+    <p style ="font-size:25%">‎</p>
     <a href="not at all sus link.html">Click for very real virus (real)</a>
 
     <p>‎</p>
     <a href="https://termsofuse.lsrt.workers.dev">Terms of Use</a>
-    <pstyle="font-size:10%;">‎</p>
+    <p style="font-size:10%;">‎</p>
     <a href="https://tos.lsrt.workers.dev">Terms of Service</a>
     <p>All info was gained from the <strong>Gay Pride Incorperation</strong> and was verified by personnel</p>
     <p style="font-size:75%;">© Copyright 2022-2022 by Cool Kids Project .Inc. All Rights Reserved.</p>
