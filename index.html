@@ -5,6 +5,7 @@
     .exp{visibility: hidden;}
     .exp2{visibility: hidden;}
     .exp3{visibility: hidden;}
+    .exp4{visibility: hidden;}
 </style>
 </head>
 <script>
@@ -31,49 +32,73 @@
 </script>
 
 <script>
-  var hidden = false;
+  var hidden2 = false;
     function unhide2() {
     var hid = document.getElementsByClassName("exp2");
     // Emulates jQuery $(element).is(':hidden');
-    if (hidden == false)
+    if (hidden2 == false)
     {
         if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
         }
-        hidden = true;
+        hidden2 = true;
     }
     else
     {
         if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "hidden";
         }
-        hidden = false;
+        hidden2 = false;
     }
 console.log("Button 2 clicked");
 }
 </script>
 
 <script>
-    var hidden = false;
+    var hidden3 = false;
     function unhide3() {
     var hid = document.getElementsByClassName("exp3");
     // Emulates jQuery $(element).is(':hidden');
-    if (hidden == false)
+    if (hidden3 == false)
     {
         if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
         }
-        hidden = true;
+        hidden3 = true;
     }
     else
     {
         if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "hidden";
         }
-        hidden = false;
+        hidden3 = false;
     }
     
 console.log("Button 3 clicked");
+}
+</script>
+
+<script>
+    var hidden4 = false;
+    function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if (hidden4 == false)
+    {
+        if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+        }
+        hidden4 = true;
+    }
+    else
+    {
+        if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "hidden";
+        }
+        hidden4 = false;
+    }
+    
+console.log("Button 4 clicked");
 }
 </script>
 
@@ -98,6 +123,15 @@ console.log("Button 3 clicked");
     <div class="exp3">
         <p>Yul likes gay men</p>
     </div>
+
+    
+    <button onclick="unhide4()">Show/Hide Answer</button>
+    <div class="exp4">
+        <p>Ryden gey</p>
+        <p>Also kinda sus (sometimes)</p>
+    </div>
+
+
     <p>‎</p>
     <a href="https://termsofuse.lsrt.workers.dev">Terms of Use</a>
     <pstyle="font-size:10%;">‎</p>
